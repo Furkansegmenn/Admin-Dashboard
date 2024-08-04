@@ -25,7 +25,7 @@ const SalesChannelChart = () => {
 					<BarChart data={SALES_CHANNEL_DATA}>
 						<CartesianGrid strokeDasharray={"3 3"} stroke='#485563' />
 						<XAxis stroke='#9CA3AF' dataKey={"name"} />
-						<YAxis stroke='#9CA3AF' dataKey={"value"} />
+						<YAxis stroke='#9CA3AF' />
 
 						<Tooltip
 							contentStyle={{
