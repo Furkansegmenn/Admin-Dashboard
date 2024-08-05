@@ -44,7 +44,7 @@ const CategoryDistributionChart = () => {
 							}}
 							itemStyle={{ color: "#E5E7EB" }}
 						/>
-						<Legend  />
+						<Legend />
 					</PieChart>
 				</ResponsiveContainer>
 			</div>
