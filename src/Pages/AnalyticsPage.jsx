@@ -1,9 +1,31 @@
+import AIPoweredInsights from "../Components/analytics/AIPoweredInsights";
+import ChannelPerformance from "../Components/analytics/ChannelPerformance";
+import CustomerSegmentation from "../Components/analytics/CustomerSegmentation";
+import OverviewCard from "../Components/analytics/OverviewCard";
+import ProductPerformance from "../Components/analytics/ProductPerformance";
+import RevenueChart from "../Components/analytics/RevenueChart";
+import UserRetention from "../Components/analytics/UserRetention";
 import Header from "../Components/common/Header";
+//
 
 const AnalyticsPage = () => {
 	return (
-		<div className='z-10 flex-1 relative'>
-			<Header title='Analiytics'></Header>
+		<div className='flex-1 overflow-auto relative z-10 bg-gray-900'>
+			<Header title={"Analytics Dashboard"} />
+
+			<main className='max-w-7xl mx-auto py-6 px-4 lg:px-8'>
+				<OverviewCard />
+				<RevenueChart />
+
+				<div className='grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8'>
+					<ChannelPerformance />
+					<ProductPerformance />
+					<UserRetention />
+					<CustomerSegmentation />
+				</div>
+
+				<AIPoweredInsights />
+			</main>
 		</div>
 	);
 };

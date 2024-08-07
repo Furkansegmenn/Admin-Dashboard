@@ -34,6 +34,7 @@ const DailyOrders = () => {
 							}}
 							itemStyle={{ color: "#E5E7EB" }}
 						/>
+						<Legend />
 						<Line
 							type='monotone'
 							dataKey='orders'
