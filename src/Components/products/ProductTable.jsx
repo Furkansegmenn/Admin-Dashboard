@@ -85,7 +85,7 @@ const ProductTable = () => {
 				</div>
 			</div>
 			<div className='overflow-x-auto'>
-				<table className='min-w-full divided-y divide-gray-700'>
+				<table className='min-w-full divide-y divide-gray-400'>
 					<thead>
 						<tr>
 							<th className='px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider'>
